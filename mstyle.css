@@ -1,0 +1,49 @@
+/* Global styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+a {
+	color: #0077cc;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.header {
+	background-color: #0077cc;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+.header img {
+	height: 50px;
+	vertical-align: middle;
+}
+.header h1 {
+	display: inline-block;
+	margin: 0;
+	padding: 0 20px;
+	vertical-align: middle;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+nav a {
+	display: block;
+	padding: 10px;
+}
+nav a:hover {
+	background-color: #fff;
+	color: #0077cc;
+}
+.content {
+	padding: 20px

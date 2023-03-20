@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login to My Online Mobile Store</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function validateForm() {
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+
+			if (username == "" || password == "") {
+				alert("Please enter your username and password.");
+				return false;
+			}
+
+			// Replace this with your own validation code
+			if (username == "admin" && password == "password") {
+				alert("Login successful!");
+				window.location = "main.html";
+				return true;
+			} else {
+				alert("Invalid username or password. Please try again.");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Login to My Online Mobile Store</h1>
+		<form onsubmit="return validateForm()">
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" required>
+			<br>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+			<br>
+			<input type="submit" value="Login">
+		</form>
+	</div>
+</body>
+</html>
